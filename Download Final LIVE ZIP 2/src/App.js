@@ -1,0 +1,1 @@
+export default function App() { return <div className='text-center p-10 text-3xl text-orange-600 font-bold'>जय शिवराय! Welcome to Shivtej Pratishthaan</div>; }
