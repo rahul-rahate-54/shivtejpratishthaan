@@ -1,1 +1,49 @@
-<!DOCTYPE html><html><head><title>Shivtej Pratishthaan</title><meta charset='UTF-8'></head><body><div id='root'></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivtej Pratishthaan</title>
+    
+    <!-- Security Headers via Meta Tags -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' 'unsafe-eval';
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' data: https:;
+        font-src 'self' data:;
+        connect-src 'self';
+        frame-ancestors 'none';
+        base-uri 'self';
+        form-action 'self';
+    ">
+    
+    <!-- Permissions Policy -->
+    <meta http-equiv="Permissions-Policy" content="
+        geolocation=(),
+        microphone=(),
+        camera=(),
+        magnetometer=(),
+        gyroscope=(),
+        speaker=(),
+        payment=()
+    ">
+</head>
+<body>
+    <div id="root"></div>
+    
+    <!-- Security Notice -->
+    <noscript>
+        <div style="text-align: center; padding: 20px; background: #f8f9fa; border: 1px solid #dee2e6; margin: 20px;">
+            <strong>Security Notice:</strong> This application requires JavaScript to be enabled for proper functionality.
+            Please enable JavaScript in your browser settings.
+        </div>
+    </noscript>
+</body>
+</html>
